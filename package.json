@@ -1,20 +1,25 @@
 {
-  "name": "super-image-cropper-example",
+  "name": "crop-gif-with-cropper",
+  "private": true,
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
-    "build": "typecheck . && vite build"
+    "build": "tsc && vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^3.0.2"
+    "super-image-cropper": "1.0.7",
+    "react": "^17.0.2",
+    "react-cropper": "^2.1.8",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "@vue/compiler-sfc": "^3.0.2",
-    "@vuedx/typecheck": "^0.2.4-0",
-    "@vuedx/typescript-plugin-vue": "^0.2.4-0",
-    "typescript": "^4.0.3",
-    "vite": "^1.0.0-rc.8"
+    "@types/react": "^17.0.33",
+    "@types/react-dom": "^17.0.10",
+    "@vitejs/plugin-react": "^1.0.7",
+    "typescript": "^4.5.4",
+    "vite": "^2.8.0"
   },
-  "keywords": [],
-  "description": ""
+  "main": "index.js",
+  "license": "MIT"
 }
